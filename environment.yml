@@ -13,14 +13,8 @@ dependencies:
     - imagecodecs
     - tifffile
     - napari
-    - cellpose-napari
-    - scikit-learn=1.0.1
+    - scikit-learn>= 0.24.0
     - scikit-image>=0.14.2
     - matplotlib=3.4.3
     - pandas>=0.24.0
     - mrc>=0.1.5
-    - big-fish
-    - tqdm=4.62.3
-    - python-igraph=0.9.6
-    - seaborn=0.11.2
-    - pyclesperanto-prototype
