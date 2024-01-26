@@ -12,7 +12,6 @@ dependencies:
     - tqdm
     - imagecodecs
     - tifffile
-    - napari
     - scikit-learn>= 0.24.0
     - scikit-image>=0.14.2
     - matplotlib>= 3.0.2
