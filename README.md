@@ -6,6 +6,7 @@ aaa
 -   Scripts available from this github page. 
 -   [Fiji] (v.2.3.0)
 -   [Anaconda] (v4.13.0)
+-   [Git](https://github.com/git-guides/install-git)
 -   [pyimagej]
 -   [Maven]
 -   [cellpose-napari]
@@ -20,10 +21,13 @@ aaa
 First, refer to the following link and install Fiji:
 [https://imagej.net/software/fiji/downloads](https://imagej.net/software/fiji/downloads)
 
-Also, refer to the following link to install Anaconda:
+Refer to the following link to install Anaconda:
 [https://www.anaconda.com/download](https://www.anaconda.com/download)
 
-Use the terminal to execute the following code to download files from this GitHub page and use pyimageJ. Replace [desired path] with your chosen path.
+Refer to the following link to install Git:
+[https://github.com/git-guides/install-git](https://github.com/git-guides/install-git)
+
+Use the terminal or Command Prompt to execute the following code to download files from this GitHub page and use pyimageJ. Replace [desired path] with your chosen path.
 ```
 cd [desired path]
 git clone https://github.com/Ochiai-Lab/seqFISH_analysis_test.git
@@ -34,7 +38,7 @@ conda activate pyimagej
 Refer to the following link to manually install Maven:
 [https://py.imagej.net/en/latest/Install.html](https://py.imagej.net/en/latest/Install.html)
 
-Execute the following in the terminal to install additional necessary packages.
+Execute the following in the terminal or Command Prompt to install additional necessary packages.
 ```
 pip install pyimagej jupyter zenodo_get
 ```
@@ -52,7 +56,7 @@ jupyter notebook
 
 Double-click on 0_image_processing.ipynb to open the jupyter notebook.
 
-After executing everything, close the jupyter notebook. Return to the terminal and exit by pressing control + c, then execute the following:
+After executing everything, close the jupyter notebook. Return to the terminal or Command Prompt and exit by pressing control + c, then execute the following:
 ```
 conda deactivate
 ```
@@ -69,7 +73,7 @@ jupyter notebook
 
 Double-click on 1_cellpose-napari.ipynb to open the jupyter notebook.
 
-After completing all steps, close the jupyter notebook. Return to the terminal and exit by pressing control + c, then execute the following:
+After completing all steps, close the jupyter notebook. Return to the terminal or Command Prompt and exit by pressing control + c, then execute the following:
 ```
 conda deactivate
 ```
@@ -85,7 +89,7 @@ jupyter notebook
 Double-click on 2_DNA-seqFISH_spot_detection.ipynb to open the jupyter notebook.
 After completing all steps, close the jupyter notebook.
 Double-click on 3_RNA-seqFISH_spot_detection.ipynb to open the jupyter notebook.
-After completing all steps, close the jupyter notebook. Return to the terminal and exit by pressing control + c, then execute the following:
+After completing all steps, close the jupyter notebook. Return to the terminal or Command Prompt and exit by pressing control + c, then execute the following:
 ```
 conda deactivate
 ```
