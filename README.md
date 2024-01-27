@@ -4,8 +4,8 @@ aaa
 
 # Required Tools and Data
 -   Scripts available from this github page. 
--   [Fiji] (v.2.3.0)
--   [Anaconda] (v4.13.0)
+-   [Fiji]
+-   [Anaconda]
 -   [Git](https://github.com/git-guides/install-git)
 -   [pyimagej]
 -   [Maven]
