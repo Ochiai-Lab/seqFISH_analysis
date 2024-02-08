@@ -49,7 +49,6 @@ Execute the following code to download the data:
 ```
 zenodo_get --doi=10.5281/zenodo.10565509
 unzip 0_raw_data.zip
-rm 0_raw_data.zip
 cd X2_jupyter_notebook
 jupyter notebook
 ```
@@ -83,7 +82,6 @@ Next, use [big-fish] to detect spots on DNA, RNA-seqFISH images.
 conda create -n bigfish_env python=3.8
 conda activate bigfish_env
 pip install big-fish "napari[all]" jupyter seaborn
-python -m pip install cellpose
 jupyter notebook
 ```
 
