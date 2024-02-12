@@ -49,6 +49,7 @@ Execute the following code to download the data:
 ```
 zenodo_get --doi=10.5281/zenodo.10565509
 unzip 0_raw_data.zip
+rm 0_raw_data.zip
 cd X2_jupyter_notebook
 jupyter notebook
 ```
