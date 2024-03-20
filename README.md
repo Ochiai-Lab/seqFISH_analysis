@@ -1,5 +1,5 @@
 # Introduction
-aaa
+Imaging-based spatial multi-omics technologies, including DNA-seqFISH+ developed by Long Cai's lab ([Takei et al., Nature, 2021](https://www.nature.com/articles/s41586-020-03126-2); [Takei et al., Science, 2021](https://www.science.org/doi/10.1126/science.abj1966)), enable the comprehensive analysis of higher-order genomic structures, gene transcription, and the localization of proteins and post-translational modifications at the single-allele level. These technologies provide unparalleled insights into biological phenomena such as the transcription machinery within cells and tissues. We have recently introduced an application of the seqFISH method to mouse embryonic stem cells, enabling detailed analysis of the spatial relationships between genomic loci, including enhancer-promoter (E-P) interactions, and uncovering the dynamics of protein accumulation at these loci during transcription at single-allele resolution ([Ohishi et al., 2023](https://www.biorxiv.org/content/10.1101/2023.11.27.568629v1)). This protocol offers a step-by-step guide for image analysis methods, utilizing images from our seqFISH experiments targeting the Nanog gene locus on chromosome 6 in mouse embryonic stem cells ([Ohishi et al., 2023](https://www.biorxiv.org/content/10.1101/2023.11.27.568629v1)). 
 
 
 # Required Tools and Data
