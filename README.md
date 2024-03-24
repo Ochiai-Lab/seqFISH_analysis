@@ -27,6 +27,7 @@ Refer to the following link to install Anaconda:
 Refer to the following link to install Git:
 [https://github.com/git-guides/install-git](https://github.com/git-guides/install-git)
 
+## 1. Pre-processing of DNA/RNA/IF-seqFISH imaging data
 Use the terminal or Command Prompt to execute the following code to download files from this GitHub page and use pyimageJ. Replace [desired path] with your chosen path.
 ```
 cd [desired path]
@@ -45,7 +46,7 @@ pip install pyimagej jupyter zenodo_get
 
 Downloading Sample Image Data Sample image data obtained by sequential DNA/RNA/IF-FISH is uploaded here:
 [https://zenodo.org/records/10565509](https://zenodo.org/records/10565509)
-Execute the following code to download the data:
+To download the data, use the terminal or Command Prompt to execute the following code to perform the above tasks.
 ```
 zenodo_get --doi=10.5281/zenodo.10565509
 unzip 0_raw_data.zip
@@ -54,14 +55,15 @@ cd X2_jupyter_notebook
 jupyter notebook
 ```
 
-Double-click on 0_image_processing.ipynb to open the jupyter notebook.
+The browser will automatically launch, making the Jupyter notebook accessible for viewing. On that page, double-click to open the file named "0_image_processing.ipynb" and then execute all the code.
 
 After executing everything, close the jupyter notebook. Return to the terminal or Command Prompt and exit by pressing control + c, then execute the following:
 ```
 conda deactivate
 ```
 
-Next, use [cellpose-napari] for segmentation.
+## 2. Nuclear segmentation of DNA/RNA/IF-seqFISH data
+Next, use [cellpose-napari] for segmentation. Use the terminal or Command Prompt to execute the following code to perform the above tasks.
 ```
 conda create -n cellpose_napari python=3.8
 conda activate cellpose_napari
@@ -71,14 +73,15 @@ pip install jupyter pyclesperanto_prototype
 jupyter notebook
 ```
 
-Double-click on 1_cellpose-napari.ipynb to open the jupyter notebook.
+The browser will automatically launch, making the Jupyter dashboard accessible for viewing. On that page, double-click to open the file named "1_cellpose-napari.ipynb" and then execute all the code.
 
 After completing all steps, close the jupyter notebook. Return to the terminal or Command Prompt and exit by pressing control + c, then execute the following:
 ```
 conda deactivate
 ```
 
-Next, use [big-fish] to detect spots on DNA, RNA-seqFISH images.
+## 3. Detection of DNA-seqFISH spots
+Next, use [big-fish] to detect spots on DNA-seqFISH images. Use the terminal or Command Prompt to execute the following code to perform the above tasks.
 ```
 conda create -n bigfish_env python=3.8
 conda activate bigfish_env
@@ -87,15 +90,18 @@ pip install cellpose
 jupyter notebook
 ```
 
-Double-click on 2_DNA-seqFISH_spot_detection.ipynb to open the jupyter notebook.
+The browser will automatically launch, making the Jupyter dashboard accessible for viewing. On that page, double-click to open the file named "2_DNA-seqFISH_spot_detection.ipynb" and then execute all the code.
 After completing all steps, close the jupyter notebook.
-Double-click on 3_RNA-seqFISH_spot_detection.ipynb to open the jupyter notebook.
+
+## 4. Detection of RNA-seqFISH spots
+Execute the following: Double-click on 3_RNA-seqFISH_spot_detection.ipynb on the Jupyter dashboard to open the jupyter notebook and then execute all the code.
 After completing all steps, close the jupyter notebook. Return to the terminal or Command Prompt and exit by pressing control + c, then execute the following:
 ```
 conda deactivate
 ```
 
-Next, use [jie] to select plausible spot regions from DNA-seqFISH spots.
+## 5. Removal of false positives in DNA/RNA-seqFISH
+Next, use [jie] to select plausible spot regions from DNA-seqFISH spots. Use the terminal or Command Prompt to execute the following code to perform the above tasks.
 ```
 git clone https://github.com/b2jia/jie.git
 cd jie
@@ -106,7 +112,15 @@ pip install jupyter
 cd ..
 jupyter notebook
 ```
-Double-click on 4_seq-DNA_RNA_FISH_spots_asignment.ipynb.
+The browser will automatically launch, making the Jupyter dashboard accessible for viewing. On that page, double-click to open the file named "4_seq-DNA_RNA_FISH_spots_assignment.ipynb" and then execute all the code.
+
+## 6. Detection of protein clusters from IF-seqFISH data
+Next, use [big-fish] to detect protein clusters on IF-seqFISH images. Use the terminal or Command Prompt to execute the following code to perform the above tasks.
+```
+conda activate bigfish_env
+jupyter notebook
+```
+The browser will automatically launch, making the Jupyter dashboard accessible for viewing. On that page, double-click to open the file named "5-IF-seqFISH_spot_detection.ipynb" and then execute all the code.
 
 
 # Citation
