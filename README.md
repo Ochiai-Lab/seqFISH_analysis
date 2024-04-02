@@ -41,7 +41,7 @@ Refer to the following link to manually install Maven:
 
 Execute the following in the terminal or Command Prompt to install additional necessary packages.
 ```
-pip install pyimagej jupyter zenodo_get
+pip install pyimagej==1.4.1 jupyter zenodo_get==1.5.1
 ```
 
 Downloading Sample Image Data Sample image data obtained by sequential DNA/RNA/IF-FISH is uploaded here:
@@ -67,9 +67,9 @@ Next, use [cellpose-napari] for segmentation. Use the terminal or Command Prompt
 ```
 conda create -n cellpose_napari python=3.8
 conda activate cellpose_napari
-pip install "napari[all]"
-pip install cellpose-napari 
-pip install jupyter pyclesperanto_prototype
+pip install "napari[all]"==0.4.18
+pip install cellpose-napari==0.1.5
+pip install jupyter pyclesperanto_prototype==0.24.2
 jupyter notebook
 ```
 
@@ -85,8 +85,8 @@ Next, use [big-fish] to detect spots on DNA-seqFISH images. Use the terminal or 
 ```
 conda create -n bigfish_env python=3.8
 conda activate bigfish_env
-pip install big-fish "napari[all]" jupyter seaborn
-pip install cellpose
+pip install big-fish==0.6.2 "napari[all]"==0.4.18 jupyter seaborn==0.13.2
+pip install cellpose== 2.2.3
 jupyter notebook
 ```
 
